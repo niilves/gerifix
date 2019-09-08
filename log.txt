@@ -4,3 +4,14 @@ https://github.com/BlackrockDigital/startbootstrap-landing-page
 
 https://startbootstrap.com/guides/how-to-create-a-website-with-github-pages/ 
 
+font suuremaks
+joondus mõlemalt poolt
+pildi vahetus - tehnoloogia
+eesmärk viimaseks ja mida me pakume esimene, lahendused teisele kohale
+
+levinumad vajadused
+
+individuaalsed lahendused
+
+https://openclassrooms.com/en/courses/3273226-dive-into-bootstrap/3278291-configure-bootstrap 
+=> changing font

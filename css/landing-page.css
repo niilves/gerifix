@@ -53,6 +53,8 @@ header.masthead h1 {
 
 .showcase .showcase-text {
   padding: 3rem;
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 .showcase .showcase-img {
