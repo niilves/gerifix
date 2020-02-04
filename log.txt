@@ -19,3 +19,7 @@ https://openclassrooms.com/en/courses/3273226-dive-into-bootstrap/3278291-config
 https://getbootstrap.com/docs/3.4/examples/carousel/#
 
 kuidas toimub protsess?
+
+use winscp to copy the public html catalog
+direkt admin
+r238516 => 
