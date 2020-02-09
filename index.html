@@ -23,13 +23,14 @@
 
 </head>
 
-<body>
+<body data-spy="scroll" data-target="#navbarResponsive">
   <!-- Navigation -->
   <!-- TODO add scrollspy to the navbar https://getbootstrap.com/docs/4.0/components/scrollspy/ 
   https://getbootstrap.com/docs/4.0/components/navbar/
-  https://getbootstrap.com/docs/4.0/components/navbar/#placement 
+  https://getbootstrap.com/docs/4.0/components/navbar/#placement  fixed-top sticky-top
   https://getbootstrap.com/docs/4.0/utilities/position/ -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
     <div class="container">
     <a class="navbar-brand" href="#">
         <img src="img/gerifix_logo.png" height="70" alt="Gerifix">
@@ -39,11 +40,11 @@
       </button>
     <div class="collapse navbar-collapse" id="navbarResponsive">
       <ul class="navbar-nav ml-auto">
-        <!-- li class="nav-item active">
-          <a class="nav-link" href="#">Avaleht
-            <span class="sr-only">(current)</span>
+        <li class="nav-item">
+          <a class="nav-link" href="#top">Avaleht
+            <!-- add item active this does not work with scroll spy span class="sr-only">(current)</span-->
             </a>
-        </li> -->
+        </li>
         <li class="nav-item">
           <a class="nav-link" href="#products">Kukkumisandur</a>
         </li>
@@ -69,68 +70,74 @@
   
   
   <!-- Masthead -->
-  <header class="masthead text-white text-center">
-    <div class="overlay"></div>
-    <div class="container">
-      <div class="row">
-        <div class="col-xl-9 mx-auto">
-          <h1 class="mb-3">Iseseisvus eakale, <br>meelerahu lähedasele.</h1>
-        </div>
-      </div>
-    </div>
-  </header>
-
-  <!-- Icons Grid -->
-  <section id="services" class="features-icons bg-light text-center">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-lg-6">
-          <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
-            <div class="features-icons-icon d-flex">
-              <i class="icon-home m-auto"></i>
-            </div>
-            <a class="nav-link" href="#products"><h3>Kukkumisandur</h3></a> 
-            <p class="lead mb-0">Abi alati käepärast!</p>
-          </div>
-        </div>
-        <div class="col-lg-6">
-          <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
-            <div class="features-icons-icon d-flex">
-              <i class="icon-heart m-auto"></i>
-            </div>
-            <a class="nav-link" href="#workshops"><h3>Tervise-alased koolitused</h3></a>
-            <p class="lead mb-0">Kasulikud teadmised.<br>Olulised nõuanded.</p>
+  <div id="top">
+    <header class="masthead text-white text-center">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-9 mx-auto">
+            <h1 class="mb-3">Iseseisvus eakale, <br>meelerahu lähedasele.</h1>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </header>
 
-  <!-- Text about what we do -->
-  <section id="about" class="features-icons bg-light text-center">
-    <div class="card bg-light my-1 py-1 text-center">
-      <div class="card-body">
-        <h2>Üks kolmest üle 65-aastasest inimesest kukub korra aastas. </h2> 
-    <p class="showcase-text"> Kaasnevad vigastused põhjustavad vähenenud liikumisvõimet, funktsionaalset võimekust, iseseisvust ja elukvaliteeti. Pärast esmast kukkumist on risk uueks kukkumiseks tunduvalt tõusnud. <br> 
-    Pakume personaalset nõustamist, meditsiinilist ja tehnilist tuge, et tagada eakatele võimalikult mugav elu oma kodus. Meie lahendused võimaldavad vanuril võimalikult pikalt nautida iseseisvat hakkama saamist ja sotsialiseerumist enne vanadekodusse minemist!</p>
+    <!-- Icons Grid -->
+    <section id="services" class="features-icons bg-light text-center">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-6">
+            <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
+              <div class="features-icons-icon d-flex">
+                <i class="icon-home m-auto"></i>
+              </div>
+              <a class="nav-link" href="#products"><h3>Kukkumisandur</h3></a> 
+              <p class="lead mb-0">Abi alati käepärast!</p>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
+              <div class="features-icons-icon d-flex">
+                <i class="icon-heart m-auto"></i>
+              </div>
+              <a class="nav-link" href="#workshops"><h3>Tervise-alased koolitused</h3></a>
+              <p class="lead mb-0">Kasulikud teadmised.<br>Olulised nõuanded.</p>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
+    <!-- Text about what we do -->
+    <section id="about" class="page-section">
+      <div class="container text-center py-5 mb-4">
+        <div class="bg-dark py-5 mb-4 text-light">
+          <h2>Üks kolmest üle 65-aastasest inimesest kukub korra aastas. </h2> 
+        </div>
+        <div class="row justify-content-md-center">
+          <div class="col-lg-10 my-auto showcase-text">
+            <p class="lead"> 
+            Kaasnevad vigastused põhjustavad vähenenud liikumisvõimet, funktsionaalset võimekust, iseseisvust ja elukvaliteeti. Pärast esmast kukkumist on risk uueks kukkumiseks tunduvalt tõusnud. <br> 
+            Pakume personaalset nõustamist, meditsiinilist ja tehnilist tuge, et tagada eakatele võimalikult mugav elu oma kodus. Meie lahendused võimaldavad vanuril võimalikult pikalt nautida iseseisvat hakkama saamist ja sotsialiseerumist enne vanadekodusse minemist!
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
 
 
   <!-- Tooted -->
   <section id="products" class="showcase">
     <div class="container-fluid p-0">
       <div class="row no-gutters">
-
         <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('img/christian-bowen-Cc10IJDoj78-unsplash.jpg');"></div>
         <div class="col-lg-6 order-lg-1 my-auto showcase-text">
           <h2>Kukkumisandur</h2>
           <p class="lead mb-0">
-		  Koostöö eakaga algab nõustamisest, mille eesmärgiks on selgitada välja kliendi personaalsed probleemid ja vajadused seoses tema igapäevase eluga. Lisaks vanurile endale räägime ka tema lähedastega ja nõustame vajadusel ka neid, et nad oskaks paremini oma eaka sugulasega toime tulla. <br>
-          Pakume kukkumisanduri renditeenust, et eakal oleks alati võimalus abi kutsuda. Kukkumisandurid pärinevad kvaliteetsetelt tootjatelt Euroopast. 
-		  </p>
+            Koostöö eakaga algab nõustamisest, mille eesmärgiks on selgitada välja kliendi personaalsed probleemid ja vajadused seoses tema igapäevase eluga. Lisaks vanurile endale räägime ka tema lähedastega ja nõustame vajadusel ka neid, et nad oskaks paremini oma eaka sugulasega toime tulla. <br>
+            Pakume kukkumisanduri renditeenust, et eakal oleks alati võimalus abi kutsuda. Kukkumisandurid pärinevad kvaliteetsetelt tootjatelt Euroopast. 
+          </p>
         </div>
       </div>
     </div>
@@ -143,8 +150,9 @@
         <div class="col-lg-6 text-white showcase-img" style="background-image: url('img/nik-macmillan-YXemfQiPR_E-unsplash.jpg');"></div>
         <div class="col-lg-6 my-auto showcase-text">
           <h2>Koolitused</h2>
-          <p class="lead mb-0"> 
-		  Korraldame tervise-alaseid koolitusi. Keskendume kukkumist ennetavatele kodukohandamise soovitustele. Tutvustame luu- ja lihaskonna tervisele olulisi toitumisnõuandeid. Arutleme teemal, milliseid vitamiine peaks tarvitama eakas. </p>
+          <p class="lead mb-0">
+            Korraldame tervise-alaseid koolitusi. Keskendume kukkumist ennetavatele kodukohandamise soovitustele. Tutvustame luu- ja lihaskonna tervisele olulisi toitumisnõuandeid. Arutleme teemal, milliseid vitamiine peaks tarvitama eakas. 
+          </p>
         </div>
       </div>
       </div>
@@ -153,21 +161,16 @@
 
 <!-- Meist -->
 <section id="about_us" class="page-section">
-  <header class="bg-light text-center py-5 mb-4">
-    <div class="container">
-      <h1 class="font-weight-light">Meist</h1>
-    </div>
-  </header>
-
   <div class="container bg-light text-center py-5 mb-4">
-    <h2 class="font-weight-light">Visioon</h2>
-    <div class="my-1 py-1 text-center">
-      <p> Meie visioon on, et eakad elavad võimalikult kaua iseseisva ja aktiivsena oma kodus. <br> 
-      Me usume, et kasutades tehnoloogiat on võimalik pakkuda lähedastele vähem stressi ja kohese teavituse kui lähedane vajab abi. </p>
+    <h1 class="font-weight-light py-2 mt-3">Meist</h1>
+    <h2 class="font-weight-light py-2 mb-2">Visioon</h2>
+    <div class="row justify-content-md-center">
+      <div class="col-lg-6 my-auto showcase-text">
+        <p> Meie visioon on, et eakad elavad võimalikult kaua iseseisva ja aktiivsena oma kodus. <br> 
+        Me usume, et kasutades tehnoloogiat on võimalik pakkuda lähedastele vähem stressi ja kohese teavituse kui lähedane vajab abi. </p>
+      </div>
     </div>
-  </div>
-
-  <div class="container">
+  
     <div class="bg-light text-center py-5 mb-4">
       <h2 class="font-weight-light">Meie meeskond</h2>
     </div>
@@ -210,24 +213,6 @@
 </section>
 
 <!-- Korduma kippuvad küsimused use collapse https://getbootstrap.com/docs/4.0/components/collapse/ -->
-<section id="questions" class="page-section">
-  <h2>Korduma Kippuvad Küsimused</h2>
-
-  <h3>Mis juhtub kui seade ei leia kasutust?</h3>
-  Kuna leping on kuumaksupõhine, saab selle vajadusel katkestada. 
-  <h3>Kas seadet on võimalik välja osta?</h3>
-  Vajadusel saab seadet ka välja osta… 
-  Pakkume seadet kuutasuga et võimaldada 
-  <h3>Mida ma kuutasu eest saan?</h3>
-  Kuutasu võimaldab seadet väikese <br>
-  Patareivahetus<br>
-  Tehniline tugi <br>
-  Kodu kohandamise soovitused
-  <h3>Kui kaugel kodukeskjaamast kukkumisandur töötab?</h3>
-  <h3>Keda kukkumise või häirenuppu vajutades informeeritakse</h3>
-  Seadmele helistab otse lähedasele. Vajadusel on võimalik seadistada mitu erinevat telefoninumbrit. 
-</section>
-
 
    <!-- Contact Section -->
   <section class="page-section" id="contact">
@@ -264,7 +249,7 @@
             </li>
             <li class="list-inline-item">&sdot;</li>
             <li class="list-inline-item">
-              <i class="fas fa-envelope text-muted"></i> <a class="d-block" href="mailto:info@gerifix.ee">info@gerifix.ee</a>
+              <a class="d-block" href="mailto:info@gerifix.ee"><i class="fas fa-envelope text-muted"></i> info@gerifix.ee</a>
             </li>
           </ul>
           <p class="text-muted small mb-4 mb-lg-0">&copy; Gerifix 2020. All Rights Reserved.</p>
