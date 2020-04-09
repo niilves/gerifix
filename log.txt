@@ -23,3 +23,10 @@ kuidas toimub protsess?
 use winscp to copy the public html catalog
 direkt admin
 r238516 => 
+
+##### 08-02-2020
+https://getbootstrap.com/docs/4.0/getting-started/introduction/  learn the bootstrap concepts
+
+https://css-tricks.com/snippets/css/a-guide-to-flexbox/#flexbox-background
+
+https://getbootstrap.com/docs/4.0/layout/grid/ the grid system is important to understand
