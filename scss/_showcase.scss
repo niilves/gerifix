@@ -1,8 +1,8 @@
 .showcase {
   .showcase-text {
     padding: 3rem;
-	text-align: justify;
-	text-justify: inter-word;
+	text-align: left;
+	text-justify: none;
   }
   .showcase-img {
     min-height: 30rem;
@@ -10,7 +10,7 @@
   }
   @media (min-width: 768px) {
     .showcase-text {
-      padding: 7rem;
+      padding: 3rem;
     }
   }
 }
