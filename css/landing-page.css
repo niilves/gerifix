@@ -255,6 +255,17 @@ section.pricing {
   opacity: 0.7;
 }
 
+.pricing .btn {
+  font-size: 80%;
+  border-radius: 5rem;
+  letter-spacing: .1rem;
+  font-weight: bold;
+  padding: 1rem;
+  opacity: 0.7;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
 /* Hover Effects on Card */
 @media (min-width: 992px) {
   .pricing .card:hover {
